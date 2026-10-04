@@ -1,0 +1,24 @@
+Last login: Sun Sep 27 16:41:23 on ttys001
+{
+  "name": "My Shoes",
+  "color": "white",
+  "size": 38,
+  "material": "leather",
+  "is_waterproof": false
+}
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+(base) wuxueqindeMacBook-Air:~ wuxueqin$ {
+>   "name": "My Shoes",
+>   "color": "white",
+>   "size": 38,
+>   "material": "leather",
+>   "is_waterproof": false
+> }
+
+
+
+
+
+

@@ -1,0 +1,60 @@
+Last login: Sun Sep 27 23:29:22 on ttys001
+# Ask the user for information
+name = input("What is your name? ")
+restaurant = input("What is your favorite restaurant? ")
+food = input("What is your favorite food? ")
+money = float(input("How much money do you have? "))
+
+# Check whether the user has enough money
+has_enough_money = money >= 20
+
+# Create a story by joining text and the user's answers
+story = (
+    name + " went to " + restaurant + " to eat "
+    + food + ". "
+)
+
+# Add an ending based on the amount of money
+if has_enough_money:
+    story += name + " had enough money to enjoy a meal there!"
+else:
+    story += name + " saved some money and planned to visit another day."
+
+# Print the finished story
+print(story)
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+(base) wuxueqindeMacBook-Air:~ wuxueqin$ # Ask the user for information
+(base) wuxueqindeMacBook-Air:~ wuxueqin$ name = input("What is your name? ")
+-bash: syntax error near unexpected token `('
+(base) wuxueqindeMacBook-Air:~ wuxueqin$ restaurant = input("What is your favorite restaurant? ")
+-bash: syntax error near unexpected token `('
+(base) wuxueqindeMacBook-Air:~ wuxueqin$ food = input("What is your favorite food? ")
+-bash: syntax error near unexpected token `('
+(base) wuxueqindeMacBook-Air:~ wuxueqin$ money = float(input("How much money do you have? "))
+-bash: syntax error near unexpected token `('
+(base) wuxueqindeMacBook-Air:~ wuxueqin$ 
+(base) wuxueqindeMacBook-Air:~ wuxueqin$ # Check whether the user has enough money
+(base) wuxueqindeMacBook-Air:~ wuxueqin$ has_enough_money = money >= 20
+-bash: has_enough_money: command not found
+(base) wuxueqindeMacBook-Air:~ wuxueqin$ 
+(base) wuxueqindeMacBook-Air:~ wuxueqin$ # Create a story by joining text and the user's answers
+(base) wuxueqindeMacBook-Air:~ wuxueqin$ story = (
+-bash: syntax error near unexpected token `('
+(base) wuxueqindeMacBook-Air:~ wuxueqin$     name + " went to " + restaurant + " to eat "
+-bash: name: command not found
+(base) wuxueqindeMacBook-Air:~ wuxueqin$     + food + ". "
+-bash: +: command not found
+(base) wuxueqindeMacBook-Air:~ wuxueqin$ )
+-bash: syntax error near unexpected token `)'
+(base) wuxueqindeMacBook-Air:~ wuxueqin$ 
+(base) wuxueqindeMacBook-Air:~ wuxueqin$ # Add an ending based on the amount of money
+(base) wuxueqindeMacBook-Air:~ wuxueqin$ if has_enough_money:
+>     story += name + " had enough money to enjoy a meal there!"
+-bash: !": event not found
+> else:
+>     story += name + " saved some money and planned to visit another day."
+> 
+> # Print the finished story
+> print(story)
